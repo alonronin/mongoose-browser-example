@@ -32,13 +32,10 @@ $(function(){
             }
 
             var errors = $.map(err.errors, function(error, path){
-                console.log(error);
                 return error.message;
             });
 
             $alert.removeClass('hide').html(errors.join('<br>'));
-
         });
     })
-
 });
