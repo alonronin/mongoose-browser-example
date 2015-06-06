@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Mongoose Client Demo</title>
+</head>
+<body>
+
+<div class="container">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h2 class="navy">New User</h2>
+        </div>
+
+        <div class="panel-body">
+            <div class="alert alert-danger hide">
+
+            </div>
+
+            <form novalidate>
+                <div class="form-group">
+                    <label>Name: </label>
+                    <input type="text" name="name" class="form-control" />
+
+                    <label>Email: <i class="glyphicon glyphicon-asterisk red small"></i></label>
+                    <input type="text" name="email" class="form-control" />
+
+                    <label>Password: <i class="glyphicon glyphicon-asterisk red small"></i></label>
+                    <input type="password" name="password" class="form-control" />
+
+                    <label>Age:</label>
+                    <input type="number" name="age" class="form-control" />
+                </div>
+            </form>
+
+        </div>
+
+        <div class="panel-footer">
+            <button type="submit" class="btn btn-primary">Create</button>
+        </div>
+    </div>
+</div>
+
+<script src="js/vendors.js"></script>
+<script src="js/bundle.js"></script>
+</body>
+</html>

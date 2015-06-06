@@ -1,0 +1,29 @@
+{
+  "name": "mongoose-browser-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack -d --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alon Valadji <alon@ronin.co.il>",
+  "license": "MIT",
+  "devDependencies": {
+    "css-loader": "^0.14.4",
+    "file-loader": "^0.8.4",
+    "imports-loader": "^0.6.4",
+    "json-loader": "^0.5.2",
+    "node-libs-browser": "^0.5.2",
+    "raw-loader": "^0.5.1",
+    "style-loader": "^0.12.3",
+    "url-loader": "^0.5.6",
+    "webpack": "^1.9.10"
+  },
+  "dependencies": {
+    "colors.css": "^2.3.0",
+    "bootstrap": "^3.3.4",
+    "jquery": "^2.1.4",
+    "mongoose": "^4.0.5"
+  }
+}
