@@ -3,7 +3,7 @@ var webpack = require('webpack');
 
 var config = {
     entry: {
-        app: path.join(__dirname, 'source', 'app.js'),
+        app: path.join(__dirname, 'src', 'app.js'),
         vendors: ['jquery', 'bootstrap', 'mongoose']
     },
 
