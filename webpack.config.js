@@ -1,5 +1,6 @@
 var path = require('path');
 var webpack = require('webpack');
+var ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 var config = {
     entry: {
@@ -21,10 +22,10 @@ var config = {
         ],
 
         loaders: [
-            { test: /\.css$/, loader: 'style!css'},
+            { test: /\.css$/, loader: ExtractTextPlugin.extract('style', 'css')},
             { test: /\.(woff2?|ttf|svg|eot)$/, loader: 'file'},
-            { test: /\.json$/, loader: "json" },
-            { test: /\.md$/, loader: "raw" }
+            { test: /\.json$/, loader: 'json' },
+            { test: /\.md$/, loader: 'raw' }
         ]
     },
 
@@ -35,7 +36,9 @@ var config = {
 
         new webpack.IgnorePlugin(/^kerberos$/),
 
-        new webpack.optimize.CommonsChunkPlugin('vendors', 'vendors.js')
+        new webpack.optimize.CommonsChunkPlugin('vendors', 'vendors.js'),
+
+        new ExtractTextPlugin("styles.css")
     ],
 
     node: {

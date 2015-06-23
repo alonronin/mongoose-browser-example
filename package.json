@@ -11,6 +11,7 @@
   "license": "MIT",
   "devDependencies": {
     "css-loader": "^0.14.4",
+    "extract-text-webpack-plugin": "^0.8.2",
     "file-loader": "^0.8.4",
     "imports-loader": "^0.6.4",
     "json-loader": "^0.5.2",

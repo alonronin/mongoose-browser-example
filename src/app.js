@@ -1,5 +1,6 @@
 var bsCss = require('../node_modules/bootstrap/dist/css/bootstrap.css');
 var colors = require('../node_modules/colors.css/css/colors.css');
+var customCss = require('./custom.css');
 
 var bs = require('bootstrap');
 var $ = require('jquery');
