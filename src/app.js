@@ -7,7 +7,6 @@ var $ = require('jquery');
 
 var schema = require('./user');
 
-
 $(function(){
     $('form').on('submit', function(e){
         e.preventDefault();
